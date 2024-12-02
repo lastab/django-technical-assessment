@@ -27,7 +27,9 @@ function Form({ route, method }) {
                 navigate("/login")
             }
         } catch (error) {
-            alert(error)
+            let err = 'Error:\n'
+            Object.keys(error.response.data).map((key)=> err= err + (key + "->" + error.response.data[key])+ '\n')
+            alert(err)
         } finally {
             setLoading(false)
         }
