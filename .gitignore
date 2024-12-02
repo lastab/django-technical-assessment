@@ -9,6 +9,7 @@ db.sqlite3-journal
 __pycache__/
 /.vscode/
 /backend/Lib/
+/backend/venv/
 
 
 # Logs
